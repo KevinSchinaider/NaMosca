@@ -6,10 +6,14 @@ double x, y, distanciaX, distanciaY, distanciaDardo;
 
 Console.WriteLine("--- Dardos ---\n");
 
+Console.ForegroundColor = (ConsoleColor)12;
 Console.WriteLine("Coordenada X..: ");
+Console.ResetColor();
 x = Convert.ToDouble(Console.ReadLine());
 
+Console.ForegroundColor = (ConsoleColor)13;
 Console.WriteLine("Coordenada Y..: ");
+Console.ResetColor();
 y = Convert.ToDouble(Console.ReadLine());
 
 distanciaX = Math.Abs(x);
@@ -46,6 +50,7 @@ else
     Console.WriteLine(" ------- ");
     Console.WriteLine("| Errou |");
     Console.WriteLine(" ------- ");
+    Console.Beep();
     Console.ResetColor();
     Console.WriteLine("Tente novamente.");
 }
